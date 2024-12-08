@@ -13,12 +13,12 @@
     "log_channel": CHANNEL_ID_FOR_EMBED_LOGS,
 
     "server_host": "0.0.0.0",
-    "server_port": 8000,
+    "server_port": 8080,
 
     "verify_guilds": {
         "SERVER_ID_HERE": VERIFIED_ROLE_ID_HERE
     },
 
     "server_logging": true,
-    "available-scopes": "Available scopes: identify guilds guilds.join email connections. Separate scopes using %20",
+    "available-scopes": "Available scopes: identify guilds guilds.join email connections. Separate scopes using %20"
 }
