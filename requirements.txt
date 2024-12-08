@@ -1,0 +1,7 @@
+git+https://github.com/Pycord-Development/Pycord
+py-cord
+requests
+aiohttp
+quart
+pystyle
+pycountry

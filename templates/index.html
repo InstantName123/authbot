@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Successfully verified</title>
+    <style>
+        @font-face {
+            font-family: 'gg sans medium';
+            src: url('gg sans medium.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'gg sans bold';
+            src: url('gg sans bold.woff2') format('woff2');
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'gg sans';
+            src: url('gg sans.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('bg.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'gg sans', Arial, sans-serif;
+            color: white;
+            user-select: none;
+        }
+        .container {
+            text-align: center;
+            background: #2c2f33;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            max-width: 450px;
+            width: 100%;
+            color: #ffffff;
+        }
+        .container img {
+            width: 120px;
+            position: absolute;
+            top: 35px;
+            left: 35px;
+            pointer-events: none;
+        }
+        .container h1 {
+            margin: 0 0 10px 0;
+            font-size: 28px;
+            font-family: 'gg sans bold', Arial, sans-serif;
+        }
+        .container p {
+            margin: 5px 0 35px;
+            font-size: 16px;
+            color: #b5bac1;
+            font-family: 'gg sans medium', Arial, sans-serif;
+        }
+        .button {
+            background-color: #5865F2;
+            color: white;
+            padding: 12px 0;
+            text-decoration: none;
+            border-radius: 3px;
+            display: block;
+            margin-top: 30px;
+            width: 100%;
+            font-size: 18px;
+            font-family: 'gg sans medium', Arial, sans-serif;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #4752C4;
+        }
+    </style>
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelector('.button').addEventListener('click', () => {
+                window.location.href = 'https://discord.com/app';
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="discord.svg" alt="Discord Logo">
+        <h1>Successfully verified!</h1>
+        <p>You can now close this page.</p>
+        <div class="button"><span>Go to Discord</span></div>
+    </div>
+</body>
+</html>
